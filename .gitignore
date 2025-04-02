@@ -1,0 +1,7 @@
+local.properties
+app/build/
+.idea/
+base/build/
+umeng/build/
+widget/build/
+.gradle/
