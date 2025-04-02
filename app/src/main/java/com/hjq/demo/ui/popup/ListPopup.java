@@ -137,7 +137,7 @@ public final class ListPopup {
             ViewHolder() {
                 super(new TextView(getContext()));
                 mTextView = (TextView) getItemView();
-                mTextView.setTextColor(getColor(R.color.black50));
+                mTextView.setTextColor(getColor(com.hjq.base.R.color.black50));
                 mTextView.setTextSize(16);
             }
 

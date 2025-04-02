@@ -186,7 +186,7 @@ public final class VideoSelectActivity extends AppActivity
                             mAdapter.setData(mAllAlbum.get(bean.getName()));
                         }
                         // 执行列表动画
-                        mRecyclerView.setLayoutAnimation(AnimationUtils.loadLayoutAnimation(getActivity(), R.anim.from_right_layout));
+                        mRecyclerView.setLayoutAnimation(AnimationUtils.loadLayoutAnimation(getActivity(), com.hjq.base.R.anim.from_right_layout));
                         mRecyclerView.scheduleLayoutAnimation();
                     });
         }
@@ -428,7 +428,7 @@ public final class VideoSelectActivity extends AppActivity
             }
 
             // 执行列表动画
-            mRecyclerView.setLayoutAnimation(AnimationUtils.loadLayoutAnimation(getActivity(), R.anim.fall_down_layout));
+            mRecyclerView.setLayoutAnimation(AnimationUtils.loadLayoutAnimation(getActivity(), com.hjq.base.R.anim.fall_down_layout));
             mRecyclerView.scheduleLayoutAnimation();
 
             if (mAllVideo.isEmpty()) {

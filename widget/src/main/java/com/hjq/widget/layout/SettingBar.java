@@ -111,8 +111,8 @@ public final class SettingBar extends FrameLayout {
         }
 
         // 文字颜色设置
-        setLeftColor(array.getColor(R.styleable.SettingBar_bar_leftColor, ContextCompat.getColor(getContext(), R.color.black80)));
-        setRightColor(array.getColor(R.styleable.SettingBar_bar_rightColor, ContextCompat.getColor(getContext(), R.color.black60)));
+        setLeftColor(array.getColor(R.styleable.SettingBar_bar_leftColor, ContextCompat.getColor(getContext(), com.hjq.base.R.color.black80)));
+        setRightColor(array.getColor(R.styleable.SettingBar_bar_rightColor, ContextCompat.getColor(getContext(),  com.hjq.base.R.color.black60)));
 
         // 文字大小设置
         setLeftSize(TypedValue.COMPLEX_UNIT_PX, array.getDimensionPixelSize(R.styleable.SettingBar_bar_leftSize, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 15, getResources().getDisplayMetrics())));
@@ -139,10 +139,10 @@ public final class SettingBar extends FrameLayout {
 
         if (getBackground() == null) {
             StateListDrawable drawable = new StateListDrawable();
-            drawable.addState(new int[]{android.R.attr.state_pressed}, new ColorDrawable(ContextCompat.getColor(getContext(), R.color.black5)));
-            drawable.addState(new int[]{android.R.attr.state_selected}, new ColorDrawable(ContextCompat.getColor(getContext(), R.color.black5)));
-            drawable.addState(new int[]{android.R.attr.state_focused}, new ColorDrawable(ContextCompat.getColor(getContext(), R.color.black5)));
-            drawable.addState(new int[]{}, new ColorDrawable(ContextCompat.getColor(getContext(), R.color.white)));
+            drawable.addState(new int[]{android.R.attr.state_pressed}, new ColorDrawable(ContextCompat.getColor(getContext(), com.hjq.base.R.color.black5)));
+            drawable.addState(new int[]{android.R.attr.state_selected}, new ColorDrawable(ContextCompat.getColor(getContext(),com.hjq.base.R.color.black5)));
+            drawable.addState(new int[]{android.R.attr.state_focused}, new ColorDrawable(ContextCompat.getColor(getContext(), com.hjq.base.R.color.black5)));
+            drawable.addState(new int[]{}, new ColorDrawable(ContextCompat.getColor(getContext(), com.hjq.base.R.color.white)));
             setBackground(drawable);
 
             // 必须要设置可点击，否则点击屏幕任何角落都会触发按压事件

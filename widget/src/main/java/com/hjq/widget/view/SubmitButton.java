@@ -451,7 +451,7 @@ public final class SubmitButton extends AppCompatButton {
      */
     private int getAccentColor() {
         TypedValue typedValue = new TypedValue();
-        getContext().getTheme().resolveAttribute(R.attr.colorAccent, typedValue, true);
+        getContext().getTheme().resolveAttribute(androidx.appcompat.R.attr.colorAccent, typedValue, true);
         return typedValue.data;
     }
 }

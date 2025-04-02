@@ -97,16 +97,16 @@ public final class HomeFragment extends TitleBarFragment<HomeActivity>
     @Override
     public void onScrimsStateChange(XCollapsingToolbarLayout layout, boolean shown) {
         if (shown) {
-            mAddressView.setTextColor(ContextCompat.getColor(getAttachActivity(), R.color.black));
+            mAddressView.setTextColor(ContextCompat.getColor(getAttachActivity(), com.hjq.base.R.color.black));
             mHintView.setBackgroundResource(R.drawable.home_search_bar_gray_bg);
-            mHintView.setTextColor(ContextCompat.getColor(getAttachActivity(), R.color.black60));
+            mHintView.setTextColor(ContextCompat.getColor(getAttachActivity(), com.hjq.base.R.color.black60));
             mSearchView.setSupportImageTintList(ColorStateList.valueOf(getColor(R.color.common_icon_color)));
             getStatusBarConfig().statusBarDarkFont(true).init();
         } else {
-            mAddressView.setTextColor(ContextCompat.getColor(getAttachActivity(), R.color.white));
+            mAddressView.setTextColor(ContextCompat.getColor(getAttachActivity(), com.hjq.base.R.color.white));
             mHintView.setBackgroundResource(R.drawable.home_search_bar_transparent_bg);
-            mHintView.setTextColor(ContextCompat.getColor(getAttachActivity(), R.color.white60));
-            mSearchView.setSupportImageTintList(ColorStateList.valueOf(getColor(R.color.white)));
+            mHintView.setTextColor(ContextCompat.getColor(getAttachActivity(), com.hjq.base.R.color.white60));
+            mSearchView.setSupportImageTintList(ColorStateList.valueOf(getColor(com.hjq.base.R.color.white)));
             getStatusBarConfig().statusBarDarkFont(false).init();
         }
     }

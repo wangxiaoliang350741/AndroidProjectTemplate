@@ -1,6 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.hjq.umeng">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <!-- 共同权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -46,6 +45,7 @@
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
             android:noHistory="true"
+            android:exported="true"
             tools:node="replace">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
